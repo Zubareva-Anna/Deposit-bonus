@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         boolean registered = true;
-        double amount = 1590.99;
-        int count = 20;
-        int miles = (int) (amount / count);
-        System.out.println("Вам начислено " + miles + " миль");
+        double deposit = 100500.50;
+        if (deposit > 1000) {
+            deposit = deposit + (int)(deposit / 100);
+        }
+        System.out.println("Вам начислено " + deposit + " рублей");
     }
 }
